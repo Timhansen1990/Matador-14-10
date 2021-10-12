@@ -9,4 +9,6 @@ public class Field {
     // Feldt pris
     static int[] fieldPrice = {100, 100, 100, 100, 10, 100, 100, 10000, 100, 100};
 
+    
+
 }
