@@ -7,6 +7,8 @@ public class Field {
     public Field(String place, int price) {
         this.place = place;
         this.price = price;
+
+
     }
 }
 
