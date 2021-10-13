@@ -3,6 +3,8 @@ package com.company;
 import java.util.Scanner;
 public class Users {
 
+    static String[] theUser = {Main.userName1, Main.userName2, Main.userName3};
+
     static Scanner player1 = new Scanner(System.in);
     static Scanner player2 = new Scanner(System.in);
     static Scanner player3 = new Scanner(System.in);
@@ -30,4 +32,5 @@ public class Users {
     public void setPlayer3(Scanner player3) {
         this.player3 = player3;
     }
+
 }

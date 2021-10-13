@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Bank {
 
+    // User starting cash amount
+    static int[] cashAmount = {10000, 10000, 10000};
+
     public static void Purchase(int user, int buildingSite) {
         //Ask if the user/player want to buy a field
         //depending of the answer:
@@ -17,10 +20,12 @@ public class Bank {
         String answer = wouldBuy.nextLine();
 
         if (answer.equals("Yes")|answer.equals("yes")) {
-            User.cashAmount[user] = User.cashAmount[user] - Field.fieldPrice[buildingSite]; //TODO rename
-            Field.field[user] = user;   //TODO rename
-            System.out.println(User.user[user] + " have just bought " + Field.field[buildingSite] + " and welcome visitors");  //TODO rename
-        }else{
+            cashAmount[user] = cashAmount[user] - Field.fieldPrice[buildingSite]; //TODO rename
+            Field.owner[buildingSite] = user;   //TODO rename
+            System.out.println(Users.theUser[user] + " have just bought " + Field.field[buildingSite] + " and welcome visitors");  //TODO rename
+
+        }
+        else{
             System.out.println("Just fine, I wish you good jurney, and greetings to all my neighbours please");
         }
 
