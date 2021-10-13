@@ -39,7 +39,9 @@ public class Main {
         }*/
 
         // Test, nor for use!
-        Bank.Purchase(1, 0);
+        //Bank.Purchase(1, 0);
+        System.out.println(Users.theUser[1]);
+        //System.out.println(Users.player1);
 
 
     }

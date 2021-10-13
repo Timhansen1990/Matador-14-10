@@ -16,7 +16,7 @@ public class Bank {
 
         Scanner wouldBuy = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Would you buy " + Field.field[buildingSite] + " for the little amount of "
-                + Field.fieldPrice[buildingSite] + " dollars ?\n Write Yes or No");  
+                + Field.fieldPrice[buildingSite] + " dollars ?\nWrite Yes or No");
         String answer = wouldBuy.nextLine();
 
         if (answer.equals("Yes")|answer.equals("yes")) {
