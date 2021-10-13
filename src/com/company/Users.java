@@ -1,4 +1,4 @@
-package com.company;
+/*package com.company;
 
 import java.util.Scanner;
 public class Users {
@@ -67,5 +67,3 @@ public class Users {
         this.player3 = player3;
     }
 
-    public static String[] theUser = new String[3];
-}

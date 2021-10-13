@@ -22,13 +22,13 @@ public class Bank {
         if (answer.equals("Yes")|answer.equals("yes")) {
             cashAmount[user] = cashAmount[user] - Field.fieldPrice[buildingSite]; //TODO rename
             Field.owner[buildingSite] = user;   //TODO rename
-            System.out.println(Users.theUser[user] + " have just bought " + Field.field[buildingSite] + " and welcome visitors");  //TODO rename
+            System.out.println(AllUsers.userListe[user] + " have just bought " + Field.field[buildingSite] + " and welcome visitors");  //TODO rename
 
         }
         else{
             System.out.println("Just fine, I wish you good jurney, and greetings to all my neighbours please");
         }
 
-
     }
 }
+
