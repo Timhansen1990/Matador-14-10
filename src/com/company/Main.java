@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Main {
 
+    public static void main(String[] args) {
+        Users.writeUser();
+        Bank.Purchase(0,1);
+
     static String userName1;
     static String userName2;
     static String userName3;
@@ -42,7 +46,6 @@ public class Main {
         //Bank.Purchase(1, 0);
         System.out.println(Users.theUser[1]);
         //System.out.println(Users.player1);
-
 
     }
 }
