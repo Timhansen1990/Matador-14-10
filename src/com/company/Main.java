@@ -1,11 +1,13 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
-    private static String userName1;
-    private static String userName2;
-    private static String userName3;
-    private String Username3;
+    static String userName1;
+    static String userName2;
+    static String userName3;
+    
     public static void main(String[] args) {
 
         System.out.print("Username: ");
@@ -35,5 +37,10 @@ public class Main {
         /*for (int i = 0; i < Field.field.length; i++) {
             System.out.println("player 1 stands on " + Field.field[i] + " to the price " + Field.fieldPrice[i]);
         }*/
+
+        // Test, nor for use!
+        Bank.Purchase(1, 0);
+
+
     }
 }
