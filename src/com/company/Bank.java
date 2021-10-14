@@ -31,6 +31,7 @@ public class Bank {
         else{
             cashAmount[user] = cashAmount[user] - Field.fieldPrice[buildingSite];
             cashAmount[Field.owner[buildingSite]] = cashAmount[Field.owner[buildingSite]] +  Field.fieldPrice[buildingSite];
+            System.out.println("You have paid the morgage!");
         }
         
     }
