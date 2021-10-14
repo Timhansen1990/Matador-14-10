@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -33,7 +34,6 @@ public class Main {
         System.out.println(AllUsers.userListe[0]);
         Bank.Purchase(0,1);
 
-
-
+        Dice.RollResult(1);
     }
 }
