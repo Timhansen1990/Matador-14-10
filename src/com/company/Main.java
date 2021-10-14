@@ -27,6 +27,10 @@ public class Main {
         System.out.print("Username Player 3: ");
         AllUsers.userListe[2].navn = scanner.nextLine();
 
+        Board.playersNames[0]= String.valueOf(AllUsers.userListe[0]);
+        Board.playersNames[1]= String.valueOf(AllUsers.userListe[1]);
+        Board.playersNames[2]= String.valueOf(AllUsers.userListe[2]);
+
 
         System.out.println("Player 1 is: " + AllUsers.userListe[0]);
         System.out.println("Player 2 is: " + AllUsers.userListe[1]);

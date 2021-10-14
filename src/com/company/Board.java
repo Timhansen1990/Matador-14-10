@@ -2,6 +2,7 @@ package com.company;
 
 public class Board {
     static int[] playerLocation = {0, 0, 0};
+    static String[] playersNames= {"Test a","Test b","Test c"};
 
     public static void Start() {
         int i;
@@ -13,7 +14,7 @@ public class Board {
                 int dice = Dice.RollResult(1); //Throw the dice
                 //
                 playerLocation[i] = playerLocation[i] + dice;//Move user x
-                System.out.println("Player " + (i + 1)  + " Stands on field " + playerLocation[i]);
+                System.out.println(playersNames[i]  + " Stands on field " + playerLocation[i]);
                 //
                 Bank.Purchase(i, playerLocation[i]);//if location is owned = pay = if player goes minus = Game Over, Terminate the game
                 //            ask if want to buy = yes =buy

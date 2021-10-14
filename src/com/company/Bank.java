@@ -29,7 +29,8 @@ public class Bank {
             }
         }
         else{
-            System.out.println("SVIN");
+            cashAmount[user] = cashAmount[user] - Field.fieldPrice[buildingSite];
+            cashAmount[Field.owner[buildingSite]] = cashAmount[Field.owner[buildingSite]] +  Field.fieldPrice[buildingSite];
         }
         
     }
