@@ -13,22 +13,25 @@ public class Bank {
         //deduct User cashAmount, note user as owner of buildingSite
         //Printstatement
 
+        if (Field.owner[user] == -1 ) {
+            Scanner wouldBuy = new Scanner(System.in);  // Create a Scanner object
+            System.out.println("Would you buy " + Field.field[buildingSite] + " for the little amount of "
+                    + Field.fieldPrice[buildingSite] + " dollars ?\nWrite Yes or No");
+            String answer = wouldBuy.nextLine();
 
-        Scanner wouldBuy = new Scanner(System.in);  // Create a Scanner object
-        System.out.println("Would you buy " + Field.field[buildingSite] + " for the little amount of "
-                + Field.fieldPrice[buildingSite] + " dollars ?\nWrite Yes or No");
-        String answer = wouldBuy.nextLine();
+            if (answer.equalsIgnoreCase("yes")) {
+                cashAmount[user] = cashAmount[user] - Field.fieldPrice[buildingSite]; //TODO rename
+                Field.owner[buildingSite] = user;   //TODO rename
+                System.out.println(AllUsers.userListe[user] + " have just bought " + Field.field[buildingSite] + " and welcome visitors");  //TODO rename
 
-        if (answer.equalsIgnoreCase("yes")) {
-            cashAmount[user] = cashAmount[user] - Field.fieldPrice[buildingSite]; //TODO rename
-            Field.owner[buildingSite] = user;   //TODO rename
-            System.out.println(AllUsers.userListe[user] + " have just bought " + Field.field[buildingSite] + " and welcome visitors");  //TODO rename
-
+            } else {
+                System.out.println("Just fine, I wish you good journey, and greetings to all my neighbours please");
+            }
         }
         else{
-            System.out.println("Just fine, I wish you good journey, and greetings to all my neighbours please");
+            System.out.println("SVIN");
         }
-
+        
     }
 }
 

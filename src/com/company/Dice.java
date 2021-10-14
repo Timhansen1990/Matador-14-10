@@ -15,7 +15,7 @@ public class Dice {
             Random r = new Random();
 
             int result = 0;
-            result = r.nextInt(3);
+            result = r.nextInt(6);
             result++;
 
             System.out.println("You rolled a: " + result);

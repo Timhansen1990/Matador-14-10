@@ -10,7 +10,7 @@ public class Main {
         User user1 = new User();
         User user2 = new User();
         User user3 = new User();
-        //AllUsers All = new AllUsers();
+        AllUsers All = new AllUsers();
 
         AllUsers.userListe[0] = user1;
         AllUsers.userListe[1] = user2;
@@ -31,9 +31,10 @@ public class Main {
         System.out.println("Player 1 is: " + AllUsers.userListe[0]);
         System.out.println("Player 2 is: " + AllUsers.userListe[1]);
         System.out.println("Player 3 is: " + AllUsers.userListe[2]);
-        System.out.println(AllUsers.userListe[0]);
-        Bank.Purchase(0,1);
 
-        Dice.RollResult(1);
+        Board.Start();
+        //Bank.Purchase(0,1);
+
+
     }
 }
