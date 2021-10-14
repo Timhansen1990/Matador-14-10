@@ -9,7 +9,7 @@ public class Bank {
 
     public static void Purchase(int user, int buildingSite) {
         //Ask if the user/player want to buy a field
-        //depending of the answer:
+        //depending on the answer:
         //deduct User cashAmount, note user as owner of buildingSite
         //Printstatement
 
@@ -19,14 +19,14 @@ public class Bank {
                 + Field.fieldPrice[buildingSite] + " dollars ?\nWrite Yes or No");
         String answer = wouldBuy.nextLine();
 
-        if (answer.equals("Yes")|answer.equals("yes")) {
+        if (answer.equalsIgnoreCase("yes")) {
             cashAmount[user] = cashAmount[user] - Field.fieldPrice[buildingSite]; //TODO rename
             Field.owner[buildingSite] = user;   //TODO rename
             System.out.println(AllUsers.userListe[user] + " have just bought " + Field.field[buildingSite] + " and welcome visitors");  //TODO rename
 
         }
         else{
-            System.out.println("Just fine, I wish you good jurney, and greetings to all my neighbours please");
+            System.out.println("Just fine, I wish you good journey, and greetings to all my neighbours please");
         }
 
     }
